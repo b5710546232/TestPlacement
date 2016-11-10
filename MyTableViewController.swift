@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MyTableViewController.swift
 //  TestPlacement
 //
 //  Created by Nattapat Sukpootanan on 11/10/2559 BE.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MyTableViewController: UIViewController {
 
-    @IBOutlet weak var input: UITextField!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,13 +21,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as!DetailViewController
-        vc.str = input.text!
-//        vc.ouputLabel.text = inputText.text
-        print("change")
-    }
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
-
